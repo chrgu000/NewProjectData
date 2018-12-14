@@ -1,0 +1,37 @@
+微信服务号
+
+
+lejiasports@163.com
+
+
+
+
+密码：Lejia-2018
+
+
+
+
+
+
+
+AppID：wxf436616a2f84f3cc
+AppSecret：6d8baac5323e6d6c0c602af51a68449a
+
+商户号
+1503853021
+
+操作码Lejia-2018
+
+
+
+
+
+
+
+API密钥
+DFG15D6R1XD2E5R123FC0B5D31GE5R1T
+
+
+阿里云账户：乐加运动  密码 ：lejia-2306
+公网IP ：47.95.239.108
+服务器密码：账户 administrator   密码Lejia2018

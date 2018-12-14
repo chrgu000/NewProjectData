@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>扣费详情</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/mobile-util.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<style type="text/css">
+		::-webkit-input-placeholder { /* WebKit browsers */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color:    rgba(0,0,0,.5);
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		.regmobile{
+			width: 94%;
+			margin:.4rem auto;
+			font-size: .4rem;
+			color:rgba(0,0,0,.7);
+		}
+		body{
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="contents">
+		<div class="fgheader"><a href="javascript:window.history.go(-1);"><img src="images/Return.png"></a>扣费详情</div>
+		<div class="deductBox">
+			<img src="images/balance-hdpi.png">
+			<p>-40</p>
+		</div>
+		<div class="listP">
+			<p>当前状态<span>扣款成功</span></p>
+			<p>使用时间<span>8小时</span></p>
+			<p>支付时间<span>2018-09-11 11:05</span></p>
+			<p>支付方式<span>余额支付</span></p>
+		</div>
+		<div class="pinbad"><a href="#">完成</a></div>
+	</div>
+	<script type="text/javascript">
+		
+		// fastclick.js组件的引用
+		$(function() {
+			FastClick.attach(document.body);
+		})
+	</script>
+</body>
+</html>

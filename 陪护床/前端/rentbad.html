@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>共享陪护床</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/mobile-util.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<style type="text/css">
+		::-webkit-input-placeholder { /* WebKit browsers */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color:    rgba(0,0,0,.5);
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		.regmobile{
+			width: 94%;
+			margin:.4rem auto;
+			font-size: .4rem;
+			color:rgba(0,0,0,.7);
+		}
+		body{
+			background: #fff;
+		}
+		.fgheader{
+			box-shadow: none !important;
+		}
+	</style>
+</head>
+<body>
+	<div class="contents">
+		<div class="fgheader">
+			<!-- <a href="javascript:window.history.go(-1);"><img src="images/Return.png"></a> -->
+		共享陪护床</div>
+		<div class="personInfo">
+			<img src="images/Headportrait-hdpi.png">
+			<p>各自安好</p>
+		</div>
+		<ul class="rentbadlist">
+			<li>
+				<a href="#">
+					<i class="icons icons1"></i>
+					<span>我的钱包</span>
+					<p class="caseNum">100元</p>
+					<i class="arrows"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="icons icons2"></i>
+					<span>租借记录</span>
+					<i class="arrows"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="icons icons3"></i>
+					<span>新手教程</span>
+					<i class="arrows"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="icons icons4"></i>
+					<span>故障反馈</span>
+					<i class="arrows"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="pinbad"><a href="#">租床</a></div>
+	<!-- 失败的窗口 -->
+	<div class="failbox">
+		<img src="images/Success-hdpi.png">
+		<p>还床成功</p>
+	</div>
+	<script type="text/javascript">
+		$('.radiobox>ul>li').eq(0).find('span').addClass('bgColor');
+		$('.radiobox>ul>li').click(function(){
+			$(this).find('span').addClass('bgColor').parent().siblings().find('span').removeClass('bgColor');
+		})
+		// fastclick.js组件的引用
+		$(function() {
+			FastClick.attach(document.body);
+		})
+	</script>
+</body>
+</html>

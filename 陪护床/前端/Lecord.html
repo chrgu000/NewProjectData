@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>租借记录</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/mobile-util.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<style type="text/css">
+		::-webkit-input-placeholder { /* WebKit browsers */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color:    rgba(0,0,0,.5);
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		.regmobile{
+			width: 94%;
+			margin:.4rem auto;
+			font-size: .4rem;
+			color:rgba(0,0,0,.7);
+		}
+		body{
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="contents">
+		<div class="fgheader"><a href="javascript:window.history.go(-1);"><img src="images/Return.png"></a>租借记录</div>
+		<ul class="zjlist">
+			<li>
+				<div class="zjbox">
+					<p class="tops">
+						<span class="fl">充值</span>
+						<span class="fr">+100元</span>
+					</p>
+					<p class="times">2018-09-11 11:09</p>
+				</div>
+			</li>
+			<li>
+				<div class="zjbox">
+					<p class="tops">
+						<span class="fl">余额消费</span>
+						<span class="fr green">-100元</span>
+					</p>
+					<p class="times">2018-09-11 11:09</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		
+		// fastclick.js组件的引用
+		$(function() {
+			FastClick.attach(document.body);
+		})
+	</script>
+</body>
+</html>

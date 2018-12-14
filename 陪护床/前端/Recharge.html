@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>充值</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/mobile-util.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
+	<style type="text/css">
+		::-webkit-input-placeholder { /* WebKit browsers */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		    color:    rgba(0,0,0,.5);
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		    color:    rgba(0,0,0,.5);
+		}
+		.regmobile{
+			width: 94%;
+			margin:.4rem auto;
+			font-size: .4rem;
+			color:rgba(0,0,0,.7);
+		}
+		body{
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="contents">
+		<div class="fgheader"><a href="javascript:window.history.go(-1);"><img src="images/Return.png"></a>充值</div>
+		<div class="radiobox">
+			<p>充值金额</p>
+			<ul>
+				<li><span>100元</span></li>
+				<li><span>150元</span></li>
+				<li><span>200元</span></li>
+				<li><span>300元</span></li>
+			</ul>
+		</div>
+		<div class="logibtn">
+			<p>您的资金将托管在第三方银行机构，并由专业机构进行监管</p>
+			<span>充值</span>
+		</div>
+	</div>
+	<!-- 成功的弹窗 -->
+	<div class="successbox">
+		<div class="successCon">
+			<img class="succimg" src="images/Recharge-hdpi.png">
+			<p class="SuccP">充值成功</p>
+			<p class="desc">每天可免费使用一个小时，本次充值可使用时间为50个小时，超过时间可续费，不然会自动报警。</p>
+			<img class="ewm" src="images/erweima.png">
+			<p class="smgz">扫一扫关注公众号，获取更多优惠</p>
+		</div>
+	</div>
+	<!-- 失败的窗口 -->
+	<div class="failbox">
+		<img src="images/Failuretopay-hdpi.png">
+		<p>支付失败</p>
+	</div>
+	<script type="text/javascript">
+		$('.radiobox>ul>li').eq(0).find('span').addClass('bgColor');
+		$('.radiobox>ul>li').click(function(){
+			$(this).find('span').addClass('bgColor').parent().siblings().find('span').removeClass('bgColor');
+		})
+		// fastclick.js组件的引用
+		$(function() {
+			FastClick.attach(document.body);
+		})
+	</script>
+</body>
+</html>
